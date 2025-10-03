@@ -1,0 +1,59 @@
+title: Nha Khoa Sắc Đẹp VN
+description: Chuyên gia về dán răng sứ Veneer tại TPHCM. Công nghệ tiên tiến, đội ngũ bác sĩ giàu kinh nghiệm.
+url: https://sacdepvn.github.io
+baseurl: ""
+lang: vi
+
+# SEO settings
+author: Nha Khoa Sắc Đẹp VN
+keywords: dán răng sứ, veneer, nha khoa, sắc đẹp, TPHCM
+image: /assets/images/og-image.jpg
+
+# Contact info
+phone: 0963234148
+address: TPHCM
+business_hours: 8:00 - 20:00 (T2-CN)
+
+# Social links
+facebook: https://facebook.com/sacdepvn
+zalo: https://zalo.me/0963234148
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  services:
+    output: true
+    permalink: /dich-vu/:title/
+  posts:
+    output: true
+    permalink: /blog/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "service"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Exclude files
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
