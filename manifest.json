@@ -1,0 +1,21 @@
+{
+  "name": "Sắc Đẹp VN - Nha Khoa Thẩm Mỹ",
+  "short_name": "Sắc Đẹp VN",
+  "description": "Chuyên gia nha khoa thẩm mỹ tại TPHCM",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
