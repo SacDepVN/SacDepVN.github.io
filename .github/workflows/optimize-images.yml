@@ -1,0 +1,37 @@
+name: Optimize images
+
+on:
+  push:
+    paths:
+      - '**.jpg'
+      - '**.jpeg'
+      - '**.png'
+      - '**.webp'
+  pull_request:
+    paths:
+      - '**.jpg'
+      - '**.jpeg'
+      - '**.png'
+      - '**.webp'
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Optimize images
+        uses: calibreapp/image-actions@main
+        with:
+          jpegQuality: '80'
+          pngQuality: '80'
+          webpQuality: '80'
+          ignorePaths: 'node_modules/**,build/**,dist/**'
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'Optimize images'
+          branch: ${{ github.head_ref || github.ref_name }}
+          file_pattern: '*.jpg *.jpeg *.png *.webp'
