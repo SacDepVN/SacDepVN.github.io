@@ -258,14 +258,26 @@
             color: var(--gray-700);
         }
         
+        /* IMAGE CENTERING AND ALIGNMENT - IMPROVED */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: var(--spacing-xl) 0;
+            width: 100%;
+        }
+        
         img {
             max-width: 100%;
             height: auto;
             border-radius: var(--radius-lg);
             box-shadow: var(--shadow-lg);
-            margin: var(--spacing-lg) 0;
             transition: all 0.3s ease;
             cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            object-fit: cover;
+            object-position: center;
         }
         
         img:hover {
@@ -278,11 +290,14 @@
             color: var(--gray-500);
             font-size: 0.9rem;
             text-align: center;
-            margin-top: calc(-1 * var(--spacing-sm));
+            margin-top: var(--spacing-sm);
             margin-bottom: var(--spacing-lg);
             padding: var(--spacing-sm);
             background: var(--gray-50);
             border-radius: var(--radius-md);
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .branch-list {
@@ -476,6 +491,10 @@
             header {
                 padding: var(--spacing-xl) var(--spacing-md);
             }
+            
+            .image-container {
+                margin: var(--spacing-lg) 0;
+            }
         }
         
         /* Performance Optimizations */
@@ -576,19 +595,19 @@
     <main id="main" class="container">
         <p>Nha khoa Asia được thành lập từ ngày 03/01/2010, tính đến nay, chúng tôi đã có hơn 1 thập kỷ để cống hiến hết mình trong sứ mệnh <strong>"Nâng cao chất lượng nụ cười Việt"</strong>. Chúng tôi tự hào khi dần đã trở thành một địa chỉ uy tín hàng đầu trong việc cung cấp các giải pháp tối ưu cho sức khỏe răng miệng của người Việt Nam.</p>
         
-        <div>
+        <div class="image-container">
             <img src="image-9.png" alt="Nha khoa Asia - Hệ thống nha khoa uy tín với sứ mệnh nâng cao chất lượng nụ cười Việt" title="Nha khoa Asia - Hệ thống nha khoa uy tín">
-            <p class="image-caption"><em>Hình ảnh: Nha khoa Asia với sứ mệnh "Nâng cao chất lượng nụ cười Việt" - Hệ thống nha khoa uy tín hàng đầu</em></p>
         </div>
+        <p class="image-caption"><em>Hình ảnh: Nha khoa Asia với sứ mệnh "Nâng cao chất lượng nụ cười Việt" - Hệ thống nha khoa uy tín hàng đầu</em></p>
         
         <p>Các dịch vụ <strong>implant</strong>, <strong>niềng răng</strong>, <strong>răng sứ</strong>, nha khoa tổng quát mà Nha Khoa Asia đảm trách và thực hiện hướng đến sự bền vững, đẳng cấp và hiệu quả. Đồng thời, chúng tôi luôn cập nhật những công nghệ nha khoa mới nhất, xu hướng mới trên toàn cầu nhằm tiên phong hỗ trợ các khách hàng một cách toàn diện nhất trong vấn đề chăm sóc răng miệng.</p>
         
         <h2>Quá Trình Thành Lập Và Phát Triển</h2>
         
-        <div>
+        <div class="image-container">
             <img src="image-10.png" alt="Nha khoa Asia - Hệ thống 8 chi nhánh phát triển nhanh chóng" title="Hệ thống 8 chi nhánh Nha khoa Asia">
-            <p class="image-caption"><em>Hình ảnh: Nha khoa Asia đã và đang phát triển nhanh chóng với 8 chi nhánh trải dài trên các tỉnh miền Nam</em></p>
         </div>
+        <p class="image-caption"><em>Hình ảnh: Nha khoa Asia đã và đang phát triển nhanh chóng với 8 chi nhánh trải dài trên các tỉnh miền Nam</em></p>
         
         <p><strong>Công Ty Cổ Phần Nha Asia</strong> được thành lập vào ngày 03/01/2010 với 1 chi nhánh tại số 02 Man Thiện, Phường Tăng Nhơn Phú A, Thành phố Thủ Đức. Hơn 10 năm, Nha Khoa Asia phát triển thêm nhiều chi nhánh khác, nhằm đáp ứng nhu cầu của khách hàng.</p>
         
@@ -645,10 +664,10 @@
         
         <h2>Biểu Tượng Thương Hiệu</h2>
         
-        <div>
+        <div class="image-container">
             <img src="image-11.png" alt="Nha khoa Asia - Logo biểu tượng răng màu xanh ngọc" title="Logo Nha khoa Asia">
-            <p class="image-caption"><em>Hình ảnh: Nha khoa Asia chọn cái răng làm biểu tượng của thương hiệu với ý nghĩa sâu sắc</em></p>
         </div>
+        <p class="image-caption"><em>Hình ảnh: Nha khoa Asia chọn cái răng làm biểu tượng của thương hiệu với ý nghĩa sâu sắc</em></p>
         
         <p>Nha khoa Asia chọn cái răng làm biểu tượng của thương hiệu, chúng tôi hướng đến sự an toàn, phục hồi, thư giãn, bền vững nhưng không kém phần độc đáo, ý nghĩa. Màu xanh ngọc của logo được cho là làm giảm huyết áp và là một màu nhẹ nhàng, thư giãn và thanh thản, sẽ giúp cho bệnh nhân cảm giác yên tâm dễ chịu trong quá trình thăm khám và điều trị. Hình ảnh, cái răng bị khuyết ở góc chân, chữ Asia nâng đỡ, lắp khoảng trống chân răng với hàm ý "Chúng tôi sẽ giúp khách hàng hoàn thiện phần khuyết khoảng trống răng", làm khách hàng sẽ tự tin hơn, hạnh phúc hơn, sống vui hơn. Hai yếu tố màu sắc và biểu tượng cái răng là 2 yếu tố quan trọng được Nha khoa Asia đề cao trong sự phát triển của mình.</p>
         
@@ -658,10 +677,10 @@
         
         <h2>Đội Ngũ Bác Sĩ Nhiều Kinh Nghiệm, Tay Nghề Cao</h2>
         
-        <div>
+        <div class="image-container">
             <img src="image-12.png" alt="Đội ngũ bác sĩ Nha khoa Asia chuyên môn hóa" title="Đội ngũ bác sĩ Nha khoa Asia">
-            <p class="image-caption"><em>Hình ảnh: Đội ngũ bác sĩ của Nha khoa Asia được tổ chức theo hướng chuyên môn hóa, mỗi bác sĩ được đào tạo chuyên sâu</em></p>
         </div>
+        <p class="image-caption"><em>Hình ảnh: Đội ngũ bác sĩ của Nha khoa Asia được tổ chức theo hướng chuyên môn hóa, mỗi bác sĩ được đào tạo chuyên sâu</em></p>
         
         <p>Đội ngũ bác sĩ của Nha khoa được tổ chức theo hướng chuyên môn hóa, mỗi bác sĩ sẽ được đào tạo chuyên sâu về một số mảng như: chỉnh nha (niềng răng), cấy ghép Implant, phục hình răng sứ thẩm mỹ, bệnh lý khớp thái dương hàm hay phẫu thuật trong miệng,….</p>
         
@@ -681,10 +700,10 @@
         
         <h2>Thiết Bị Máy Móc Hiện Đại, Hệ Thống Vô Trùng Tiêu Chuẩn Châu Âu Class B</h2>
         
-        <div>
+        <div class="image-container">
             <img src="image-13.png" alt="Trang thiết bị máy móc hiện đại Nha khoa Asia" title="Thiết bị máy móc Nha khoa Asia">
-            <p class="image-caption"><em>Hình ảnh: Trang thiết bị máy móc hiện đại tại Nha khoa Asia - Tiêu chuẩn Châu Âu Class B</em></p>
         </div>
+        <p class="image-caption"><em>Hình ảnh: Trang thiết bị máy móc hiện đại tại Nha khoa Asia - Tiêu chuẩn Châu Âu Class B</em></p>
         
         <p>Đến với Nha khoa Asia, các khách hàng sẽ được đảm bảo điều trị và thăm khám trong những điều kiện tốt nhất. Hệ thống máy móc và trang thiết bị hiện đại luôn được trang bị đầy đủ cho toàn bộ các dịch vụ như: Trồng răng Implant, chỉnh nha, tẩy trắng răng, bọc răng sứ,… Do đó, khách hàng khi đến Nha khoa Asia sẽ không cần ra bên ngoài để chụp phim và lấy mẫu kết quả mà sẽ được thăm khám, chụp hình trực tiếp tại nha khoa.</p>
         
