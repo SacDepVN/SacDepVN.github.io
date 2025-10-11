@@ -1,0 +1,6 @@
+PLACEHOLDER FOR: image-9.png
+Description: Hình ảnh chính - Nha khoa Asia với sứ mệnh "Nâng cao chất lượng nụ cười Việt"
+Size: 1.7MB
+Location: temp-images/image-9.png
+
+This is a placeholder file. Please replace with the actual image-9.png file.
