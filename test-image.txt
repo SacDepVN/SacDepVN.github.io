@@ -1,0 +1,2 @@
+This is a test file to check GitHub upload permissions.
+File created for testing MCP GitHub functionality.
