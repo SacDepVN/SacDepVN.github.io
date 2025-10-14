@@ -59,9 +59,9 @@
     <style>
         :root {
             /* Modern 2025 Color Palette - TRENDING COLORS */
-            --primary-color: #0F172A;
-            --primary-dark: #020617;
-            --primary-light: #334155;
+            --primary-color: #1E40AF;
+            --primary-dark: #1E3A8A;
+            --primary-light: #3B82F6;
             --secondary-color: #059669;
             --accent-color: #DC2626;
             --success-color: #10B981;
@@ -369,13 +369,13 @@
             border: 1px solid var(--gray-200);
         }
         
-        /* PERFECT CONTACT GRID ALIGNMENT */
+        /* PERFECT CONTACT GRID ALIGNMENT - FIXED */
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: var(--spacing-xl);
             margin-top: var(--spacing-xl);
-            align-items: start;
+            align-items: stretch;
         }
         
         .contact-item {
@@ -415,11 +415,13 @@
             margin-bottom: var(--spacing-md);
             font-size: 1.2rem;
             text-align: center;
+            width: 100%;
         }
         
         .contact-item p {
             margin-bottom: var(--spacing-sm);
             text-align: center;
+            width: 100%;
         }
         
         .contact-item a {
@@ -430,6 +432,7 @@
             transition: all 0.3s ease;
             display: block;
             text-align: center;
+            width: 100%;
         }
         
         .contact-item a:hover {
@@ -442,6 +445,7 @@
             font-size: 0.9rem;
             text-align: center;
             display: block;
+            width: 100%;
         }
         
         blockquote {
