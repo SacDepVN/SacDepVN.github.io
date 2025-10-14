@@ -203,17 +203,19 @@
         }
         
         .subtitle {
-            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-            opacity: 0.95;
-            font-weight: 400;
-            position: relative;
-            z-index: 1;
+            font-size: 1.2rem;
+            opacity: 1;
             color: var(--white);
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            font-weight: 500;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
         
         main {
-            margin-bottom: var(--spacing-2xl);
+            padding: 3rem 0;
+        }
+        
+        section {
+            margin-bottom: 3rem;
         }
         
         h2 {
@@ -533,6 +535,18 @@
             img {
                 max-width: 100%;
                 width: 100%;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+            
+            .branch-list {
+                grid-template-columns: 1fr;
             }
         }
         
