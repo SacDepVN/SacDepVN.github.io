@@ -1,1 +1,1 @@
-Updated: 2025-01-14 10:02:56 - Fixed subtitle color to white for better readability - FORCE REFRESH
+Updated: 2025-01-14 10:22:06 - Added modern glass effect background to subtitle with gradient and blur - READY FOR TESTING
